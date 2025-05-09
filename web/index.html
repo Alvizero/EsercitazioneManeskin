@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="script.js" defer></script>
+        <title>Esercitazione Maneskin</title>
+    </head>
+<body>
+
+    <!-- LOGIN -->
+    <div id="login">
+        <h1>Inserisci i tuoi dati per rispondere al quiz</h1>
+        <form>
+            <label>Nome:</label><br>
+            <input type="text" id="nome"><br>
+            <label>Email:</label><br>
+            <input type="text" id="email"><br>
+            <label id="domandaVerificaRobot">Quanto fa:</label><br>
+            <input type="number" id="verificaRobot"><br>
+        </form>
+
+        <br><button id="accedi">Accedi</button>
+    </div>
+
+    <!-- QUIZ -->
+    <div id="sezioneQuiz">
+        <!-- DOMANDA 1 -->
+        <div>
+            <p>Il gruppo dei Maneskin era:</p>
+            <form>
+                <input type="checkbox" id="misto">
+                <label>Misto</label><br>
+                <input type="checkbox" id="australiano">
+                <label>Australiano</label><br>
+                <input type="checkbox" id="italiano">
+                <label>Italiano</label><br>
+                <input type="checkbox" id="femminile">
+                <label>Femminile</label><br>
+            </form>
+        </div>
+
+        <!-- DOMANDA 2 -->
+        <div>
+            <form>
+                <img id="foto1" src="src/maneskin.jpg">
+                <img id="foto2" src="src/u2.jpg">
+                <img id="suggerimento" src="src/info.jpg">
+                <p id="suggerimento2"></p>
+            </form>
+        </div>
+
+        <!-- DOMANDA 3 -->
+        <div>
+            <label>Seleziona la risposta giusta</label>
+            <select id="domanda3">
+                <option value="risposta0">Scegli</option>
+                <option value="risposta1">I Maneskin sono un gruppo di 4 persone</option>
+                <option value="risposta2">I Maneskin sono un gruppo che esiste da più di 30 anni</option>
+                <option value="risposta3">I Maneskin sono famosi anche per aver aperto il concerto dei Rolling Stones</option>
+            </select>
+        </div>
+
+        <br><button id="confermaQuiz">Invia risposte</button>
+    </div>
+
+    <!-- PUNTEGGIO -->
+    <div id="sezionePunteggi">
+        <h1 id="nomeVisualizzato">nome</h1>
+        <p id="punteggio">punteggio</p>
+        <button id="home">ritorna all'inizio</button>
+    </div>
+
+</body>
+</html>
