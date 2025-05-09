@@ -55,6 +55,14 @@ function validazioneDati() {
 
   return true;
 }
+
+document.getElementById("cancella").addEventListener("click", cancella);
+
+function cancella() {
+  nome.value = "";
+  email.value = "";
+  verificaRobot.value = "";
+}
 // LOGIN
 
 
@@ -143,7 +151,7 @@ function mostraParte3() {
   sezionePunteggi.style.display = "block";
 
   document.getElementById("nomeVisualizzato").innerHTML = "Nome: " + nome.value;
-  document.getElementById("punteggio").innerHTML = "Punteggio totale:" + punteggio;
+  document.getElementById("punteggio").innerHTML = "Punteggio totale: " + punteggio;
 
   document.getElementById("home").addEventListener("click", tornaLogin);
 }
@@ -151,5 +159,10 @@ function mostraParte3() {
 
 // RESET DI TUTTO
 function tornaLogin() {
-  location.reload(); // ricarica la pagina // forse dovevo usare un altro metodo
+  login.style.display = "block";
+  sezioneQuiz.style.display = "none";
+  sezionePunteggi.style.display = "none";
+  cancella();
+
+  //  location.reload(); // ricarica la pagina // forse dovevo usare un altro metodo
 }
