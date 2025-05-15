@@ -162,7 +162,11 @@ function tornaLogin() {
   login.style.display = "block";
   sezioneQuiz.style.display = "none";
   sezionePunteggi.style.display = "none";
+  
+  // Reset dei dati
   cancella();
+  punteggio = 0;
+  rispostaDom2 = null;
 
   //  location.reload(); // ricarica la pagina // forse dovevo usare un altro metodo
 }
