@@ -90,6 +90,11 @@ function confermaQuiz() {
 
 // DOMANDA 1
 function rispondidom1() {
+  const misto = document.getElementById("misto");
+  const italiano = document.getElementById("italiano");
+  const australiano = document.getElementById("australiano");
+  const femminile = document.getElementById("femminile");
+  
   if(misto.checked && italiano.checked && !australiano.checked && !femminile.checked) {
     punteggio += 2;
   } else {
@@ -136,6 +141,7 @@ function suggerimento(){
 
 // DOMANDA 3
 function rispondidom3() {
+  const domanda3 = document.getElementById("domanda3");
   if(domanda3.value == "risposta3") {
     punteggio += 2;
   } else {
